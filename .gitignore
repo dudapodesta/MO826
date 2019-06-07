@@ -1,2 +1,10 @@
+
+#Jupyter Notebook files
 /.project
 ML/.ipynb_checkpoints/
+
+#virtual environment files
+/venv
+
+#Pycharm IDE files
+/.idea

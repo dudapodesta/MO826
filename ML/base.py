@@ -5,26 +5,30 @@ from sklearn import tree
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
+from joblib import dump
 
-if __name__ == "__main__":
 
+def pre_process():
     # making data frame from csv file
     data = pd.read_csv("../data/NACC.csv", index_col="NACCID")
-
     # print number of columns
     print("Original data set has %d samples and %d variables" % (data.shape[0], data.shape[1]))
-
     # dropping passed columns
     data.drop(
         ["NACCNEC", "NACCWRI1", "NACCWRI2", "NACCWRI3", "NACCINT", "NACCPICK", "NACCCBD", "NACCPROG", "NACCADC",
          "NACCMOD",
          "NACCYOD", "NACCAUTP", "NPFORMVER"], axis=1, inplace=True)
-
     # clean data
     data = data.query('NACCBRAA <= 7')
-
     # print number of columns
     print("After drop data set has %d samples and %d variables" % (data.shape[0], data.shape[1]))
+
+    return data
+
+
+if __name__ == "__main__":
+
+    data = pre_process()
 
     X = data.values[:, :-2]
     Y_age = data.values[:, -2]
@@ -67,6 +71,7 @@ if __name__ == "__main__":
             best_index = clf.best_index_
             best_clf = clf.best_estimator_
 
+    dump(best_clf, "tree.model")
     y_true, y_pred = y_test, best_clf.predict(X_test)
     y_pred_ceil = np.ceil(y_pred).astype(int)  # ceiling melhorou 15% a acc
     print("Detailed classification report:")

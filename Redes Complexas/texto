@@ -1,4 +1,4 @@
 O dataset NACC.csv foi modificado para MACC3.csv, retirando colunas que tinham células vazias.
 Com o script source.py foram gerados 4 arquivos csv do tipo Source-Target-Weight, só foi utilizado o último criado (7)
 demais ficaram muito pesados, com muitos dados.
-CSV's 4 e 5 ainda sem cabeçalhos.
+CSV's 4 e 5 ainda sem cabeçalhos, não couberam no git.

@@ -1,3 +1,10 @@
 CSV's selecionados sobre Ontologias do site https://ncit.nci.nih.gov/ncitbrowser/pages/home.jsf?version=19.05d
 Planilha.ods dados retirados do site
 CSV's relações feitas
+Resultados:
+1)Gene_Product_Malfunction_Associated_With_Disease que são exclusivos da doença de Alzheimer
+ 	prod-only-alz.csv
+2)Doenças que têm algum Gene_Product_Malfunction_Associated_With_Disease diferente dos presentes no Alzheimer
+ 	other-not-alz-product.csv
+3)Doenças em que todos os seus Gene_Product_Malfunction_Associated_With_Disease estão presentes no Alzheimer
+ other-all-alz.csv

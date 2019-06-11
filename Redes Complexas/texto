@@ -2,3 +2,5 @@ O dataset NACC.csv foi modificado para NACC3.csv, retirando colunas que tinham c
 Com o script source.py foram gerados 4 arquivos csv do tipo Source-Target-Weight, só foi utilizado o último criado (7)
 demais ficaram muito pesados, com muitos dados.
 CSV's 4 e 5 ainda sem cabeçalhos, não couberam no git.
+No gephi utilizar apenas o CSV Source-Target-Weight ->  	source_target7.csv
+O  	source_target6.csv está muito extenso, o gephi não aguentou

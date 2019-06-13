@@ -4,3 +4,7 @@ demais ficaram muito pesados, com muitos dados.
 CSV's 4 e 5 ainda sem cabeçalhos, não couberam no git.
 No gephi utilizar apenas o CSV Source-Target-Weight ->  	source_target7.csv
 O  	source_target6.csv está muito extenso, o gephi não aguentou
+
+Dataset apoeapoc.csv editado para apoeapocnovo.csv com o script sourceec.py foi criado CSV Source-Target-Weight (saidaapoeapoc-new.csv) onde as arestas
+são formadas caso um nó Pessoa tenha o Valor Apoe ou Apoc correspondente (Apoe1 e Apoe2 ->3 ou 2; e Apoc1 e Apoc2 -> 1 ou 2)
+foram criados 8 nós, um para cada valor possível.

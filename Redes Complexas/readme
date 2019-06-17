@@ -9,3 +9,9 @@ Dataset apoeapoc.csv editado para apoeapocnovo.csv com o script sourceec.py foi 
 são formadas caso um nó Pessoa tenha o Valor Apoe ou Apoc correspondente (Apoe1 e Apoe2 ->3 ou 2; e Apoc1 e Apoc2 -> 1 ou 2)
 foram criados 8 nós, um para cada valor possível.
 Imagens dos grafos: EC-modularity-forceatlas.png e EC-forceatlas-noverlap.png
+
+Arquivos novos: 
+datasource.py: retira linhas com valores 8 ou 9 que podem ter dados corrompidos
+datasource2.py: a partir da saida do .py acima cria CSV' Source-Target-Weight (sem cabeçalho)
+dataset-interm.csv: saída de datasource.py
+dataset-saida1.csv e dataset-saida2.csv: saídas de datasource.py

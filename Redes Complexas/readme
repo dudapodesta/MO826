@@ -20,3 +20,5 @@ Teste Rede Complexa:
 teste-complex.py testa se a rede de arestas entre nós com 11 ou 12 atributos iguais é rede complexa, plotando um histograma
 complex-net1.png saída para 11 ou 12 atributos iguais
 rede-complexa.png saída para 10,11 ou 12 atributos iguais
+
+similarity.png.gephi arquivo do projeto no Gephi

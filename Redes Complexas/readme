@@ -14,4 +14,4 @@ Arquivos novos:
 datasource.py: retira linhas com valores 8 ou 9 que podem ter dados corrompidos
 datasource2.py: a partir da saida do .py acima cria CSV' Source-Target-Weight (sem cabeçalho)
 dataset-interm.csv: saída de datasource.py
-dataset-saida1.csv e dataset-saida2.csv: saídas de datasource.py
+dataset-saida1.csv e dataset-saida2.csv: saídas de datasource2.py
